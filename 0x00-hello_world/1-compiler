@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o ${CFILE}o | tr -d 'c'
+gcc -S $CFILE -o $CFILE | mv $CFILE ${CFILE}o | tr -d 'c'
