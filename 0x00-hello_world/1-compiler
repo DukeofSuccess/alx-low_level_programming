@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o ${CFILE}.o | cut -c ".c"
+gcc -S $CFILE -o ${CFILE}.o | tr -d "[.c]"
