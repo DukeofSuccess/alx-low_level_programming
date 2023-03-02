@@ -2,10 +2,11 @@
 
 /**
  *reset_to_98 - takes ptr to int and update value to 98
- *Return: Always 0
+ *@n: An integer input pointer
+ *Return: nothing
  */
 
 void reset_to_98(int *n)
 {
-	*n = 98
+	*n = 98;
 }
