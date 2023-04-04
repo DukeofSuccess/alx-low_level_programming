@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *add_node - add new node to beggining of list
+ *add_node_end - add new node to end of list
  *@head: pointer to list_t pointer
  *@str: copied string
  *Return: address of new node or NULL if failure
@@ -33,11 +33,11 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (end_node);
 	}
 
-	while (end_node->next != NULL)
+	while (temp->next)
 	{
-		end_node = end_node->next;
+		temp = temp->next;
 	}
-	end_node->next = temp;
+	temp->next = end_node;
 
 
 	return (end_node);
