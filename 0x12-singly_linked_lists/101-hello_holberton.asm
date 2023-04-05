@@ -1,5 +1,5 @@
 	SECTION .data
-	format db "Hello, Holberton", 0
+	format db "Hello, Holberton", 10
 
 	SECTION .text
 	global main
