@@ -1,0 +1,12 @@
+#include "lists.h"
+
+/**
+ *print_listint - Print all elements in list
+ *@h: pointer to list
+ *Return: number of nodes
+ */
+
+size_t print_listint(const listint_t *h)
+{
+	
+}
