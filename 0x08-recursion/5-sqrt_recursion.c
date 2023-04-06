@@ -1,12 +1,11 @@
 #include "main.h"
+int findsqrt_recursion(int n, int _sqrt);
 
 /**
  *_sqrt_recursion - Returns natural square of an int
  *@n: given integer
  *Return: zero
  */
-
-int findsqrt_recursion(int n, int s);
 
 int _sqrt_recursion(int n)
 {
@@ -18,9 +17,16 @@ int _sqrt_recursion(int n)
 	return (0);
 }
 
+/**
+ *findsqrt_recursion - actual sqrt func
+ *@n: original number
+ *@_sqrt: square root
+ *Return: Square root
+ */
+
 int findsqrt_recursion(int n, int _sqrt)
 {
-	if ( _sqrt * _sqrt > n)
+	if (_sqrt * _sqrt > n)
 	{
 		return (-1);
 	}
